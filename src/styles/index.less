@@ -1,0 +1,243 @@
+@charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    width: 100%;
+}
+
+
+#header {
+    width: 100%;
+    height: 120px;
+//    display: flex;
+   background: url(../../images/tou.jpg) no-repeat;
+   background-position: 50% center;
+   background-size: auto 120px;
+   &:hover {
+       cursor: pointer;
+   }
+}
+
+
+#nav {
+    width: 100%;
+    height: 40px;
+    background: #333333;
+    // margin-left: 347px;
+    text-align: center;
+    >#center {
+        width: 1226px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        // background: green;
+        >#left {
+            float: left;
+            height: 40px;
+            a { //a是行内元素不能直接添加宽高  
+                display: inline-block;
+                line-height: 40px;
+                font-size: 12px;
+                text-decoration: none;
+                color: #B0B0B0; 
+               
+                &:hover {
+                    color: white;
+                }
+            }
+            span {
+                margin:0 3.6px;
+                color: #424242;
+            }
+        }
+        >#right {
+            float:right;
+            height: 40px;
+            a {
+               
+                display: inline-block;
+                line-height: 40px;
+                font-size: 12px;
+                text-decoration: none;
+                color: #B0B0B0; 
+                &:hover {
+                    color: white;
+                }
+                &:last-child {
+                    width: 120px;
+                    height: 40px;
+                    background: #424242;
+                    &:hover {
+                        background: #fff;
+                        color: #ff6700;
+                    }
+
+                }
+            }
+            span {
+                margin: 0 3.6px;
+                color: 66,66,66;
+                &:hover {
+                    background: #fff;
+                    color: #ff6700;
+                }
+            }
+            
+        }
+    }
+ }
+
+#next-header {
+    width: 100%;
+    height: 100px;
+    
+    >#container {
+        width: 1226px;
+        height: 100%; 
+        // background: red;
+        margin-right: auto;
+        margin-left: auto;
+        // margin:0 auto;
+        //左右边距自动  让他居中
+        >#header-logo {
+            width: 62px;
+            height: 55px;
+            margin-top: 22.5px;
+            float: left;
+            >#logo {
+                width: 55px;
+                height:55px;
+            background: #FF6700;
+            }
+        }
+        >#nav-list {
+        
+            width: 850px;
+            float: left;
+            // text-align: center;
+            // background: green;
+        >ul {
+                list-style: none;
+                float: left;
+                padding: 12px 0 0 30px;//上右下左
+                // margin-left: 145px;
+                >li{
+                    float: left;
+                    padding: 26px 10px 38px;
+                    cursor: pointer;
+                    &:first-child{
+                        width: 115px;
+                      
+                    }
+                    
+                    >a {
+           
+                    text-align: start;
+                        display: block;
+                        line-height: 100px;
+                        float: left;
+                        font-size: 16px;
+                        text-decoration: none;
+                        color: #333; 
+                        }
+                }
+            }
+          
+        }
+    }
+}
+
+
+#guide {
+    width: 1226px;
+    height: 460px;
+    background: url(../../images/lunbo1.jpg);
+    margin: 0 auto;
+    margin-bottom:17px;
+    >#guide-left {
+        width: 234px;
+        height: 420px;
+        // background: green;
+        padding:  20px 0;
+        background: rgba(105, 101, 101, 0.6);
+
+        >ul {
+            >li {
+                width: 234px;
+                height: 42px;
+                list-style: none; 
+                margin: 0 auto;
+               
+                &:hover {
+                    background:#ff6700;
+                }
+            
+                >a {
+                    display: block;
+                    text-decoration: none;
+                    color:#999F9F;
+                    >#guide-left-left {
+                        width: 204px;
+                        height: 42px;
+                        float: right;
+                        line-height:42px; 
+                        color: white;
+                        font-size: 16px;
+                        >span {
+                            float: right;
+                            margin-right: 30px;
+                        }
+                    }
+                    
+                }  
+            }
+        }
+    }
+    
+}
+
+#parttwo {
+    width: 1226px;
+    height: 170px;
+    margin: 0 auto;
+    >ul {
+        float: left;
+        width: 228px;
+        height: 164px;
+        padding: 3px;
+        margin-right:14px;
+        list-style: none;
+        background: #5F5750;
+       
+        >li {
+            float: left;
+            width: 76px;
+            height: 82px;
+           
+            >a {
+                display: block;
+                width: 70px;
+                height: 46px;
+                padding-top: 18px;
+                text-decoration: none;
+                color: #CCCAC8;
+            }
+            >span {
+                // display: block;
+                font-size: 24px;
+                font-weight: 600;
+            }
+        }
+    }
+    img {
+        width: 316px;
+        height: 170px;
+        float: left;
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
