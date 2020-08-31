@@ -184,7 +184,7 @@ html,body {
                         float: right;
                         line-height:42px; 
                         color: white;
-                        font-size: 16px;
+                        font-size: 14px;
                         >span {
                             float: right;
                             margin-right: 30px;
@@ -210,12 +210,13 @@ html,body {
         margin-right:14px;
         list-style: none;
         background: #5F5750;
-       
         >li {
             float: left;
             width: 76px;
             height: 82px;
+            position: relative;
            
+        
             >a {
                 display: block;
                 width: 70px;
@@ -223,12 +224,40 @@ html,body {
                 padding-top: 18px;
                 text-decoration: none;
                 color: #CCCAC8;
+                font-size: 12px;
+                text-align: center;
+                
+                >span {
+                    // display: block;
+                    font-size: 24px;
+                    font-weight: 600; 
+                }
+                >p {
+                    font-size: 12px;
+                    // font-weight: 600;
+                    margin-top: 12px;
+                }
             }
-            >span {
-                // display: block;
-                font-size: 24px;
-                font-weight: 600;
-            }
+           
+            
+        }
+        >li::before {
+            content:"";
+            width: 70px;
+            height: 1px;
+            background: #665E57;
+            position: absolute;
+        }
+        >li::after {
+            content:"";
+            width: 1px;
+            height: 80px;
+            background: #665E57;
+            position: absolute;
+            top:0;
+        }
+        &>a:hover {
+            color: #fff;
         }
     }
     img {
@@ -240,4 +269,644 @@ html,body {
             margin-right: 0;
         }
     }
+    
 }
+//小米闪购下面
+#partthree {
+    width: 100%;
+    background: #F5F5F5;
+    margin-top: 17px;
+    #partthree-first {
+        width:1226px;
+        height: 398px;
+        margin: 0 auto;
+        >#partthree-first-top {
+            width: 100%;
+            height: 24px;
+            // background: red;
+            //这是左边的小米闪购
+            >#title {
+                font-size: 22px;
+                line-height: 24px;
+                color:#333;
+                font-weight: 200; 
+                position: relative;
+                padding:  17px 0;
+                >li {
+                    width: 36px;
+                    height: 22px;
+                    float: right;
+                    font-size: 16px;
+                    line-height: 22px;
+                    border: 1px solid #E0E0E0;
+                    list-style: none;
+                    color: #b0b0b0;
+                    &:nth-of-type(2) {
+                        border-right:none;
+                    }
+                    
+                    >a {
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        line-height: 16px;
+                        text-align: center;
+                        transition: color .5s;
+                        text-decoration: none;
+                        color: #b0b0b0;
+                        >.iconfont {
+                            font-size: 16px;
+                            font-weight: 600;
+                        }
+                        
+                        &:hover {
+                            color:rgb(255,103,0)
+                        }
+                    }
+                }
+            }
+            //这是小米抢购下面的五张图
+        }
+//这是小米闪购下面的五张图中
+    #partfour {
+            width: 1226px;
+            height: 339px;
+            // background: red;
+        
+>ul {
+        width: 1226px;
+        height: 339px;
+        float: left;
+        >li {
+            width: 234px;
+            height: 300px;
+            list-style: none;
+            border-top: 1px solid black;
+            padding-top: 39px;
+            background: white;
+            text-align: center;
+            margin-right: 14px;
+            float: left;
+            &:last-child{
+                margin-right: 0;
+            }  
+            &:first-child {
+                background: #f1eded;
+                 >#round {
+                     font-size:24px;
+                     color:#ef3a3b;
+                     padding-top: 15px;
+                 }
+                 >.first-img {
+                    margin:25px auto;
+                 }
+                 >#span1{
+                    width: 234px;
+                    height: 22px;
+                    line-height: 22px;
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    color:rgba(0, 0, 0, 0.54)
+                }
+                >span {
+                    width: 46px;
+                    height: 46px;
+                    display: block;
+                    background: #605751;
+                    font-size: 24px;
+                    float: left;
+                    line-height: 46px;
+                    &:nth-of-type(1){
+                    margin-left: 20px; 
+                    }
+                }
+                >i {
+                    width: 15px;
+                    height: 46px;
+                    line-height: 46px;
+                    color: #605751;
+                    font-size: 28px;
+                    font-style: normal;
+                    float: left;
+                }
+                
+            }
+            //第一个li写好了 
+            >a {
+                width: 233.98px;
+                height:300px;
+                text-decoration: none;
+                >#ziti {
+                    margin: 0 20px 3px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-overflow: ellipsis;
+                    color: #212121;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    margin-top:15px;
+                }
+                >#desc {
+                    height: 18px;
+                    margin: 0 20px 12px;
+                    font-size: 12px;
+                    text-overflow: ellipsis;
+                    color: #b0b0b0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                >#price {
+                    color: #ff6709;
+                    display: inline;
+                }
+               del {
+                   font-size: 14px;
+                   color: white;
+               }
+                >img {
+                    width:160px;
+                    height: 160px;
+                    background:white;
+                }
+               
+            }
+        }  
+}
+     }
+    } 
+//上面是小米闪购 下面是手机页面第一张图
+#partfive {
+    width: 1226px;
+    height: 120px;
+    margin: 0 auto;
+   margin-top: 20px;
+   margin-bottom: 20px;
+    img{
+        width: 1226px;
+        height: 120px;
+    }
+}
+//下面是手机左页面
+#partsix{
+    width: 1226px;
+    height: 686px;
+    margin:0 auto;
+    // background: red;
+    //左右手机显示
+    >#partsix-top {
+        width: 1226px;
+        height: 58px;
+        // background: green;
+        position: relative;
+        >#title{
+        width: 1226px;
+        height: 58px;
+        font-size: 22px;
+        font-weight: 200;
+        line-height: 58px;
+        color: #333;
+        }
+        //下面这个是家电页面右边两个选项的部分
+        >#partseven-right {
+            float:right;
+            position: absolute;
+            top: 7px;
+            right: 0;
+            font-size: 16px;
+            color: #333333;
+            >ul {
+                width: 156px;
+                height: 42px;
+                // line-height: 42px;
+                >li {
+                    margin-left: 30px;
+                    float: right;
+                    list-style: none;
+                    line-height: 42px;
+                    
+                }
+            }
+        }
+
+
+
+        >#partsix-top-right {
+            width: 92px;
+            height: 58px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            // padding: 20px 0;
+            >a {
+                width: 72px;
+                height: 24px;
+                line-height: 58px;
+                text-decoration: none;
+                color: #E0E0E0;
+                font-size: 16px;
+                color: rgb(66,66,66);
+                transition: all .4s;
+                &:hover {
+                    color: rgb(255,103,0);
+                }
+                >#iconfont{
+                    width: 12px;
+                    height: 12px;
+                    padding: 4px;
+                    margin-left: 8px;
+                    border-radius: 16px;
+                    font-size: 12px;
+                    line-height: 12px;
+                    vertical-align: 1px;
+                    
+                }
+            }
+        }
+    }
+    >#partsix-bottom {
+       width: 1226px;
+       height: 628px;
+       position: relative;
+       
+        >#partsix-bottom-left{
+            // margin-right: 14px;
+           >a{
+            >img{
+                width: 234px;
+                height: 614px;
+                &:hover {
+                box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                transform: translate3d(0,-2px,0);
+            }
+            }
+            
+           }
+        }
+        >#partsix-bottom-right{
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            >ul{
+                width: 992px;
+                height: 614px;
+                float: left;
+                >li{
+                width: 234px;
+                height: 260px;
+                padding:20px 0;
+                float: left ;
+                list-style: none;
+                margin: 0 0 14px 14px;
+                text-align: center;
+                background: #fff;
+                &:hover {
+                    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                    transform: translate3d(0,-2px,0);
+                }
+                // background: red;
+                >a {
+                    
+                    text-align: center;
+                    text-decoration: none;
+                    >img {
+                        width: 160px;
+                        height: 160px;
+                        margin: 0 37px 18px;
+                    }
+                    >h2 {
+                        color: #333333;
+                        font-size: 14px;
+                        margin: 0 10px 2px;
+                        // font-weight: 400;
+                    }
+                    >p:nth-of-type(1){
+                        color: #B0b0B0;
+                        font-size: 12px;
+                        margin: 0 10px 10px;
+                        // font-weight: 400;
+                    }
+                    >p:last-of-type {
+                        font-size: 14px;
+                        margin: 0 10px 14px;
+                        color: #ff6700;
+                    }
+                }
+                }
+            }
+            
+             
+        }
+    }
+}
+
+
+//。。。。。。。。。。。。。。。。。。。。
+//家电页面第一张图已经在上面谢过了直接引用的  
+//家电下面
+>#top {
+    width: 1226px;
+    height: 58px;
+    // background: green;
+    position: relative;
+    margin: 0 auto;
+    >#title{
+    width: 1226px;
+    height: 58px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+    }
+    //下面这个是家电页面右边两个选项的部分
+    >#right {
+        float:right;
+        position: absolute;
+        top: 7px;
+        right: 0;
+        font-size: 16px;
+        color: #333333;
+        >ul {
+            width: 156px;
+            height: 42px;
+            // line-height: 42px;
+            >li {
+                margin-left: 30px;
+                float: right;
+                list-style: none;
+                line-height: 42px;
+            }
+        }
+    }
+}
+//这个top是开头的页面  可以重复使用、
+
+#partseven{
+    width: 1226px;
+    height: 628px;
+    margin:0 auto;
+    position: relative;
+    // background: red;
+    //左右手机显示
+   
+   
+       
+       
+       
+        >#partseven-bottom{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1226px;
+            height: 628px;
+            // background: red;
+          
+            
+            >ul{
+                width: 1226px;
+                height: 628px;
+                float: left;
+                margin-top: 14px;
+               
+                >li{
+                width: 234px;
+                height: 250px;
+                padding:20px 0;
+                float: left ;
+                list-style: none;
+                margin: 0 14px 14px 0;
+                text-align: center;
+                background: #fff;
+                transition: linear .4s;
+                
+                &:hover {
+                    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                    transform: translate3d(0,-2px,0);
+                }
+                &:nth-of-type(5) {
+                    margin-right:0;
+                }
+                &:nth-of-type(10) {
+                    margin-right:0;
+                }
+               
+                // background: red;
+                >a {
+                    
+                    text-align: center;
+                    text-decoration: none;
+                    >img {
+                        width: 160px;
+                        height: 160px;
+                        margin: 0 37px 18px;
+                       
+                    }
+                    >h2 {
+                        color: #333333;
+                        font-size: 14px;
+                        margin: 0 10px 2px;
+                        // font-weight: 400;
+                    }
+                    >p:nth-of-type(1){
+                        color: #B0b0B0;
+                        font-size: 12px;
+                        margin: 0 10px 10px;
+                        // font-weight: 400;
+                    }
+                    >p:last-of-type {
+                        font-size: 14px;
+                        margin: 0 10px 14px;
+                        color: #ff6700;
+                    }
+                }
+                }
+            }
+        }
+    }
+
+
+
+
+    //底部内容
+    .whiteInsert{
+        margin: 0;
+        width: 100%;
+        height: 10px;
+        background: #F5F5F5;
+    }
+    
+    footer{
+        width: 100%;
+        background: #fff;
+        overflow: hidden;
+        >.service{
+            width: 1226px;
+            height: 26px;
+            padding: 27px 0;
+            font-size: 16px;
+            transition: color .2s;
+            margin: 0 auto;
+            border-bottom: 1px solid #b0b0b0;
+            >li{
+                width: 1222px/5;
+                height: 25px;
+                line-height: 25px;
+                float: left;
+                text-align: center;
+                border-right: 1px solid #b0b0b0;
+               &:hover{
+                color:#ff6709;
+                } 
+                &:last-child{
+                    border: none;
+                }
+            }  
+        }
+        >.foot{
+            width: 1226px;
+            margin: 0 auto;
+        
+            >.other{
+                width: 974px;
+                height: 210px;
+                overflow: hidden;
+                float: left;
+                >li{
+                    width: 973px/6;
+                    margin: 40px auto;
+                    float: left;
+                    font-size: 14px;
+                    &:last-of-type{
+                        border-right: 1px solid #b0b0b0;
+                    }
+                    >p{
+                        margin: -1px 0 26px;
+                        >a{
+                            color: #424242;
+                        }
+                    }
+                    >ul{
+                        width: 112px;
+                        font-size: 12px;
+                        >li{
+                            margin: 10px 0 0;
+                            >a{
+                                color: #757575;
+                                &:hover{
+                                    color: #ff6709;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            >.ask{
+                width: 252px;
+                height: 100%;
+                margin: 40px 0;
+                text-align: center;
+                float: right;
+                >h1{
+                    font-weight: normal;
+                    font-size: 22px;
+                    color: #ff6700;
+                    margin-bottom: 5px;
+                }
+                >p{
+                    color: #616161;
+                    font-size: 12px;
+                    margin-bottom: 5px;
+                }
+                >span{
+                    display: block;
+                    width: 118px;
+                    height: 28px;
+                    margin: 0 auto 5px;
+                    font-size: 12px;
+                    line-height: 28px;
+                    color: #ff6700;
+                    border: 1px solid #ff6700;
+                    &:hover{
+                        color: #fff;
+                        background: #ff6709;
+                    }
+                }
+            }
+        }
+    }
+    .about{
+        background: #fafafa;
+        padding: 30px 0;
+        >.contain{
+            width: 1226px;
+            font-size: 12px;
+            color:#B0b0B0;
+            margin: 0 auto;
+            >.logo{
+                width: 57px;
+                height:57px;
+                float: left;
+                background: orange;
+                margin-right: 10px;
+                >img{
+                    width: 57px;
+                    height: 57px;
+                }
+            }
+            >ul{
+                margin-bottom: 3px;
+                margin-right: 67px;
+                clear: right;
+               >li{
+                   float: left;
+                   >a{
+                       color: #757575;
+                       font-size: 12px;
+                   }
+               } 
+               >span{
+                   float: left;
+                color: #757575;
+                font-size: 12px;
+               }
+            }
+            >.message{
+                margin-left: 67px;
+                margin-bottom: 3px;
+                overflow: hidden;
+                >P{
+                    display: block;
+                    float: left;
+                    >a{
+                        color:#B0b0B0;
+                        font-size: 12px;
+                        cursor: pointer;
+                        transition: color .2s;
+                        &:hover{
+                            color: #ff6709;
+                        }
+                    }
+                }
+            }
+            >a{
+                >img{
+                    height: 28px;
+                }
+                >.lastImg{
+                    height: 40px;
+                }
+            }
+            >a:first-of-type{
+                margin-left:67px;
+            }
+        }
+        >.end{
+            height: 19px;
+            text-align: center;
+            margin: 30px 0 0;
+        }
+    }
+}
+
+
+

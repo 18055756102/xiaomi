@@ -1,0 +1,272 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+  width: 100%;
+}
+//登录的左上角小米商城
+#toubu {
+    width: 1130px;
+    height: 98px;
+    margin: 0 auto;
+    // background: red;
+    >a{
+        display: block;
+        width: 200px;
+        height: 98px;
+        >img {
+            width: 200px;
+            height: 98px;
+        }
+    }
+}
+//中间的背景大图
+#centerbackground {
+    width: 100%;
+    height: 588px;
+    background-image: url("https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aece569d6689b4c461bb53efd9eea9c7.jpg");
+    background-position: center;
+    position: relative;
+    //背景图固定 居中
+
+
+
+    
+
+  
+    //背景图右边的选项框
+    >#inputright {
+        width: 410px;
+        height: 559px;
+        position: absolute;
+        top: 30px;
+       bottom: 0;
+       right: 130px;
+        background: white;
+        // position: relative;
+
+
+        //账号登陆  扫码登陆
+        >#denglu {
+            width: 410px;
+            height: 83px;
+            // background: red;
+            >#iddenglu{
+                text-align: center;
+                height: 83px;
+                >a{
+                    // display: block;
+                    font-size: 24px;
+                    line-height: 83px;
+                    text-decoration: none;
+                    color: #666666;
+                    padding: 27px 0 24px; 
+                }
+                span{
+                    // width:1px;
+                    // height: 24px;
+                    margin: 0 35px 0 34px;
+                    font-size: 24px;
+                    color: #e0e0e0;
+                }
+            }
+
+
+        }
+
+        //登陆下面的input
+        >#underinput {
+            width: 348px;
+            height: 476px;
+            margin: 0 auto;
+         
+                >input {
+                    //input行内块元素可以加宽高
+                    width: 320px;
+                    height: 22px;
+                    padding:13px 14px 13px 14px;
+                    line-height: 22px;
+                    // background: green;
+                    outline: none;
+                    border: 1px solid #e0e0e0;
+                    margin-bottom: 14px;
+                }
+
+        //未输入账号或者密码会出现提示
+        >#tishi {
+            width:348px;
+            height:22px;
+            font-size: 14px;
+            display: none;
+            // background: red;
+            color: #ff6700;
+
+        }
+        //input下面的登陆按钮
+        >#tijiao {
+            width:348px;
+            height:60px;
+            // color: white;
+            text-align: center;
+          >input {
+              width: 348px;
+              height: 50px;
+              outline: none;
+              background: #FF6700;
+              border: none;
+              font-size: 14px;
+              color: white;
+              cursor: pointer;
+          }
+
+        }   
+           
+
+
+        //登陆下面的手机短信登录注册
+       
+          
+            >a{
+                display: block;
+                width: 348px;
+                height: 20px;
+                text-decoration: none;
+                text-align: center;
+                >span {
+                    margin: 0 auto;
+                    font-size: 14px;
+                    font-family: Helvetica,arial,"MI Lan Pro","Hiragino Sans GB","PingFang SC","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+                    color: #ff6700;
+                }
+            }
+
+            //这是立即注册忘记密码
+            #nowzhuce {
+                width: 348px;
+                height: 20px;
+                margin-top:20px; 
+                >a {
+                    display: block;
+                    width: 348px;
+                    height: 20px;
+                    margin: 0 auto;
+                    text-decoration: none;
+                    text-align: center;
+                    >span {
+                       font-size: 14px;
+                    font-family: Helvetica,arial,"MI Lan Pro","Hiragino Sans GB","PingFang SC","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+                    color: #999999;
+                    }
+                }
+            }
+            #othersway {
+                width: 348px;
+                height: 209px;
+                // background: red;
+                margin-top:18px;
+                position: relative;
+
+                >#hengxian{
+                    width: 348px;
+                    height: 20px;
+                    position: absolute;
+                    bottom: 46px;
+                    // background: green;
+                    text-align: center;
+                   
+                    >span {
+                        margin: 0 auto;
+                        font-size: 14px;
+                        color: #BBBBBB;
+                    }
+                }
+
+
+
+                //这是下面qq  微信 新浪的登录
+                >#dengluway{
+                    width: 348px;
+                    height: 36px;
+                    padding: 3px 0 0;
+                    position: absolute;
+                    bottom: 0;
+                    // background: red;
+                    display: flex;
+                     justify-content: center;
+                    align-items: center;
+    
+                        &>span{
+                            width: 35px;
+                            height: 35px;
+                            font-size: 30px;
+                            line-height: 35px;
+                            margin: 0 15px;
+                        }
+                        &>span:nth-of-type(1){
+                            color: #0288D1;
+                            font-size: 35px;
+                        }
+                        &>span:nth-of-type(2){
+                            color: #D32F2F;
+                        }
+                        &>span:nth-of-type(3){
+                            color: #00AAEE;
+                        }
+                        &>span:nth-of-type(4){
+                            color: #00D20D;
+                        }
+                } 
+            }
+     
+        }
+    }
+}
+
+//下面小字
+#footerword {
+    width: 1226px;
+    height: 180px;
+    position: fixed;
+    top: 800px;
+    text-align: center;
+    margin: 0 auto;
+    >ul {
+        font-size: 14px;
+        display: inline-block;
+        >li {
+            float: left;
+            list-style: none;
+            color: #757575;
+            // &:nth-of-type(1){
+            //     color: #333333;
+            // }
+            >a {
+                padding: 0 10px 0 10px;
+                color: #757575;
+               
+                &:hover {
+                    color: #333333;
+                }
+            }
+        }
+    } 
+    >#jingcha {
+        padding: 10px 0 10px 0;
+        >a {
+            font-size: 14px;
+            color:#757575;
+        }
+        >span{
+            font-size: 14px;
+            color:#757575;
+        }
+        >img {
+            margin:0 -6px 0 -6px;
+
+        }
+    }
+}
+
+

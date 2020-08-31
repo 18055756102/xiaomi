@@ -1,0 +1,153 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  background: #F9F9F9;
+}
+#dakuang {
+  width: 854px;
+  height: 640px;
+  margin: 0 auto;
+}
+#dakuang > #center {
+  width: 786px;
+  height: 640px;
+  margin: 119px 0 0 35px;
+  background: white;
+}
+#dakuang > #center > #logo {
+  width: 768px;
+  height: 88px;
+  margin: 0 auto;
+}
+#dakuang > #center > #logo > #liltle {
+  width: 49px;
+  height: 48px;
+  margin: 0 auto;
+  background: #ff6700;
+}
+#dakuang > #center > #logo > #liltle img {
+  width: 49px;
+  height: 48px;
+}
+#dakuang > #center > h4 {
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: #333333;
+  margin: 0 auto;
+}
+#dakuang > #center > #placeselect {
+  width: 332px ;
+  height: 298px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+#dakuang > #center > #placeselect > #guojia {
+  height: 20px;
+  display: block;
+  color: #333333;
+  font-size: 14px;
+  line-height: 15px;
+}
+#dakuang > #center > #placeselect > #selectguojia {
+  font-size: 14px;
+  color: #555555;
+  border: 1px solid #e8e8e8;
+  height: 40px;
+  padding-left: 14px;
+}
+#dakuang > #center > #placeselect > #selectguojia > p {
+  line-height: 40px;
+}
+#dakuang > #center > #placeselect > #nextword {
+  width: 332px;
+  height: 20px;
+  color: #666666;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+#dakuang > #center > #placeselect > #phonenumber {
+  width: 330px;
+  height: 42px;
+  border: 1px solid #e8e8e8;
+}
+#dakuang > #center > #placeselect > #phonenumber > #area {
+  width: 53px;
+  height: 14px;
+  font-size: 14px;
+  float: left;
+  border-right: 1px solid #e8e8e8;
+  line-height: 14px;
+  padding: 14px 0 14px 14px;
+}
+#dakuang > #center > #placeselect > #phonenumber > input {
+  width: 248px;
+  height: 14px;
+  font-size: 14px;
+  border: none;
+  color: #555555;
+  outline: none;
+  float: left;
+  padding: 14px 0 14px 14px;
+}
+#dakuang > #center > #placeselect > input {
+  width: 332px;
+  height: 42px;
+  font-size: 14px;
+  margin-top: 30px;
+  color: white;
+  border: none;
+  outline: none;
+  background: #FF6700;
+  cursor: pointer;
+}
+#dakuang > #center > #placeselect > input:hover {
+  background: #ff936a;
+}
+#dakuang > #center > #nextlitleword {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+#dakuang > #center > #nextlitleword > p {
+  font-size: 14px;
+  color: #9d9d9d;
+}
+#dakuang > #center > #nextlitleword > p > a {
+  font-weight: bolder;
+  color: #333333;
+}
+#dakuang > #footerword {
+  width: 854px;
+  margin-top: 10%;
+  color: #9d9d9d;
+  text-align: center;
+}
+#dakuang > #footerword > ul {
+  font-size: 14px;
+  display: inline-block;
+}
+#dakuang > #footerword > ul > li {
+  float: left;
+  list-style: none;
+  color: #757575;
+}
+#dakuang > #footerword > ul > li > a {
+  padding: 0 10px 0 10px;
+  color: #757575;
+}
+#dakuang > #footerword > #jingcha {
+  padding: 10px 0 10px 0;
+}
+#dakuang > #footerword > #jingcha > a {
+  font-size: 14px;
+  color: #9d9d9d;
+}
+#dakuang > #footerword > #jingcha > img {
+  margin: 0 -6px 0 -6px;
+}

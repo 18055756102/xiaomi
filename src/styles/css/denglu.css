@@ -1,0 +1,212 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  width: 100%;
+}
+#toubu {
+  width: 1130px;
+  height: 98px;
+  margin: 0 auto;
+}
+#toubu > a {
+  display: block;
+  width: 200px;
+  height: 98px;
+}
+#toubu > a > img {
+  width: 200px;
+  height: 98px;
+}
+#centerbackground {
+  width: 100%;
+  height: 588px;
+  background-image: url("https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aece569d6689b4c461bb53efd9eea9c7.jpg");
+  background-position: center;
+  position: relative;
+}
+#centerbackground > #inputright {
+  width: 410px;
+  height: 559px;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  right: 130px;
+  background: white;
+}
+#centerbackground > #inputright > #denglu {
+  width: 410px;
+  height: 83px;
+}
+#centerbackground > #inputright > #denglu > #iddenglu {
+  text-align: center;
+  height: 83px;
+}
+#centerbackground > #inputright > #denglu > #iddenglu > a {
+  font-size: 24px;
+  line-height: 83px;
+  text-decoration: none;
+  color: #666666;
+  padding: 27px 0 24px;
+}
+#centerbackground > #inputright > #denglu > #iddenglu span {
+  margin: 0 35px 0 34px;
+  font-size: 24px;
+  color: #e0e0e0;
+}
+#centerbackground > #inputright > #underinput {
+  width: 348px;
+  height: 476px;
+  margin: 0 auto;
+}
+#centerbackground > #inputright > #underinput > input {
+  width: 320px;
+  height: 22px;
+  padding: 13px 14px 13px 14px;
+  line-height: 22px;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 14px;
+}
+#centerbackground > #inputright > #underinput > #tishi {
+  width: 348px;
+  height: 22px;
+  font-size: 14px;
+  display: none;
+  color: #ff6700;
+}
+#centerbackground > #inputright > #underinput > #tijiao {
+  width: 348px;
+  height: 60px;
+  text-align: center;
+}
+#centerbackground > #inputright > #underinput > #tijiao > input {
+  width: 348px;
+  height: 50px;
+  outline: none;
+  background: #FF6700;
+  border: none;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+#centerbackground > #inputright > #underinput > a {
+  display: block;
+  width: 348px;
+  height: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+#centerbackground > #inputright > #underinput > a > span {
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: Helvetica, arial, "MI Lan Pro", "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+  color: #ff6700;
+}
+#centerbackground > #inputright > #underinput #nowzhuce {
+  width: 348px;
+  height: 20px;
+  margin-top: 20px;
+}
+#centerbackground > #inputright > #underinput #nowzhuce > a {
+  display: block;
+  width: 348px;
+  height: 20px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+}
+#centerbackground > #inputright > #underinput #nowzhuce > a > span {
+  font-size: 14px;
+  font-family: Helvetica, arial, "MI Lan Pro", "Hiragino Sans GB", "PingFang SC", "Microsoft YaHei", "微軟正黑體", "儷黑 Pro", sans-serif;
+  color: #999999;
+}
+#centerbackground > #inputright > #underinput #othersway {
+  width: 348px;
+  height: 209px;
+  margin-top: 18px;
+  position: relative;
+}
+#centerbackground > #inputright > #underinput #othersway > #hengxian {
+  width: 348px;
+  height: 20px;
+  position: absolute;
+  bottom: 46px;
+  text-align: center;
+}
+#centerbackground > #inputright > #underinput #othersway > #hengxian > span {
+  margin: 0 auto;
+  font-size: 14px;
+  color: #BBBBBB;
+}
+#centerbackground > #inputright > #underinput #othersway > #dengluway {
+  width: 348px;
+  height: 36px;
+  padding: 3px 0 0;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#centerbackground > #inputright > #underinput #othersway > #dengluway > span {
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 0 15px;
+}
+#centerbackground > #inputright > #underinput #othersway > #dengluway > span:nth-of-type(1) {
+  color: #0288D1;
+  font-size: 35px;
+}
+#centerbackground > #inputright > #underinput #othersway > #dengluway > span:nth-of-type(2) {
+  color: #D32F2F;
+}
+#centerbackground > #inputright > #underinput #othersway > #dengluway > span:nth-of-type(3) {
+  color: #00AAEE;
+}
+#centerbackground > #inputright > #underinput #othersway > #dengluway > span:nth-of-type(4) {
+  color: #00D20D;
+}
+#footerword {
+  width: 1226px;
+  height: 180px;
+  position: fixed;
+  top: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+#footerword > ul {
+  font-size: 14px;
+  display: inline-block;
+}
+#footerword > ul > li {
+  float: left;
+  list-style: none;
+  color: #757575;
+}
+#footerword > ul > li > a {
+  padding: 0 10px 0 10px;
+  color: #757575;
+}
+#footerword > ul > li > a:hover {
+  color: #333333;
+}
+#footerword > #jingcha {
+  padding: 10px 0 10px 0;
+}
+#footerword > #jingcha > a {
+  font-size: 14px;
+  color: #757575;
+}
+#footerword > #jingcha > span {
+  font-size: 14px;
+  color: #757575;
+}
+#footerword > #jingcha > img {
+  margin: 0 -6px 0 -6px;
+}
