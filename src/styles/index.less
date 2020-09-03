@@ -6,8 +6,13 @@
 html,body {
     width: 100%;
 }
-
-
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+//顶部的图
 #header {
     width: 100%;
     height: 120px;
@@ -19,13 +24,11 @@ html,body {
        cursor: pointer;
    }
 }
-
-
+//第一个导航栏
 #nav {
     width: 100%;
     height: 40px;
     background: #333333;
-    // margin-left: 347px;
     text-align: center;
     >#center {
         width: 1226px;
@@ -33,6 +36,7 @@ html,body {
         margin-left: auto;
         margin-right: auto;
         // background: green;
+        position: relative;
         >#left {
             float: left;
             height: 40px;
@@ -40,27 +44,33 @@ html,body {
                 display: inline-block;
                 line-height: 40px;
                 font-size: 12px;
-                text-decoration: none;
                 color: #B0B0B0; 
-               
                 &:hover {
                     color: white;
                 }
+                &:nth-of-type(11):hover{
+                    >span{
+                        height: 148px;
+                    }
+                    &::before{
+                        display:block;
+                    }
+                }
             }
-            span {
+            >span {
                 margin:0 3.6px;
                 color: #424242;
             }
         }
+            
+        
         >#right {
             float:right;
             height: 40px;
             a {
-               
                 display: inline-block;
                 line-height: 40px;
                 font-size: 12px;
-                text-decoration: none;
                 color: #B0B0B0; 
                 &:hover {
                     color: white;
@@ -73,7 +83,6 @@ html,body {
                         background: #fff;
                         color: #ff6700;
                     }
-
                 }
             }
             span {
@@ -87,68 +96,120 @@ html,body {
             
         }
     }
- }
-
+ 
+}
+ //第二个导航栏
 #next-header {
     width: 100%;
     height: 100px;
-    
     >#container {
         width: 1226px;
-        height: 100%; 
-        // background: red;
-        margin-right: auto;
-        margin-left: auto;
-        // margin:0 auto;
+        height: 100%; ;
+        margin:0 auto;
         //左右边距自动  让他居中
         >#header-logo {
             width: 62px;
             height: 55px;
             margin-top: 22.5px;
             float: left;
+            text-align: center;
             >#logo {
                 width: 55px;
                 height:55px;
-            background: #FF6700;
+                background: #FF6700;
+                // cursor: pointer;
+                position: relative;
+                >a{
+                    width: 96px;
+                    height: 48px;
+                    position: absolute;
+                    left: -48px;
+                    transition: linear 0.5s;
+                    display: flex;
+                        &:hover{
+                          left: 0px;
+                        }
+                    >img{
+                        width: 48px;
+                        height: 48px;
+                        }
+                    }
             }
         }
         >#nav-list {
-        
             width: 850px;
             float: left;
-            // text-align: center;
-            // background: green;
         >ul {
-                list-style: none;
                 float: left;
                 padding: 12px 0 0 30px;//上右下左
-                // margin-left: 145px;
                 >li{
                     float: left;
                     padding: 26px 10px 38px;
                     cursor: pointer;
                     &:first-child{
                         width: 115px;
-                      
+                        text-align: center; 
                     }
-                    
                     >a {
-           
-                    text-align: start;
+                        text-align: start;
                         display: block;
-                        line-height: 100px;
                         float: left;
                         font-size: 16px;
-                        text-decoration: none;
                         color: #333; 
+                        &:hover{
+                            color: #ff6700;
                         }
+                        &:nth-of-type(1) {
+                            float: right;
+                        }
+                    }  
+                     >span{
+                        float: left;
+                        line-height: 40px;
+                        margin: 0 3.6px;
+                        color: #424242;
+            }    
+         }
+    }
+ }
+         //右边input
+         #rightinput {
+             width: 296px;
+             height: 50px;
+            //  background: green;
+             float: right;
+             margin-top: 25px;
+             position: relative;
+             &:hover {
+                input,.lass{
+                    border: 1px solid rgb(176,176,176);
                 }
             }
-          
+            >input {
+                right: 51px;
+                width: 223px;
+                height: 45px;
+                padding: 0 10px;
+                font-size: 14px;
+                color: rgb(117,117,117);
+                line-height: 48px;
+                border: 1px solid #e0e0e0;
+            }
+            &>.lass{
+                border: 1px solid #e0e0e0;
+                background: white;
+                width: 50px;
+                height: 45px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                text-align: center;
+                line-height: 45px;
+                cursor: pointer;
+            }
         }
-    }
+        }
 }
-
 
 #guide {
     width: 1226px;
@@ -159,24 +220,18 @@ html,body {
     >#guide-left {
         width: 234px;
         height: 420px;
-        // background: green;
         padding:  20px 0;
         background: rgba(105, 101, 101, 0.6);
-
         >ul {
             >li {
                 width: 234px;
                 height: 42px;
-                list-style: none; 
                 margin: 0 auto;
-               
                 &:hover {
                     background:#ff6700;
                 }
-            
                 >a {
                     display: block;
-                    text-decoration: none;
                     color:#999F9F;
                     >#guide-left-left {
                         width: 204px;
@@ -197,7 +252,7 @@ html,body {
     }
     
 }
-
+//这是小米秒杀
 #parttwo {
     width: 1226px;
     height: 170px;
@@ -208,25 +263,23 @@ html,body {
         height: 164px;
         padding: 3px;
         margin-right:14px;
-        list-style: none;
         background: #5F5750;
         >li {
             float: left;
             width: 76px;
             height: 82px;
             position: relative;
-           
-        
             >a {
                 display: block;
                 width: 70px;
                 height: 46px;
                 padding-top: 18px;
-                text-decoration: none;
                 color: #CCCAC8;
                 font-size: 12px;
                 text-align: center;
-                
+                &:hover {
+                    color: #fff;
+                }
                 >span {
                     // display: block;
                     font-size: 24px;
@@ -238,8 +291,6 @@ html,body {
                     margin-top: 12px;
                 }
             }
-           
-            
         }
         >li::before {
             content:"";
@@ -256,9 +307,6 @@ html,body {
             position: absolute;
             top:0;
         }
-        &>a:hover {
-            color: #fff;
-        }
     }
     img {
         width: 316px;
@@ -269,13 +317,14 @@ html,body {
             margin-right: 0;
         }
     }
-    
 }
 //小米闪购下面
 #partthree {
     width: 100%;
     background: #F5F5F5;
     margin-top: 17px;
+    overflow: hidden;
+
     #partthree-first {
         width:1226px;
         height: 398px;
@@ -299,12 +348,10 @@ html,body {
                     font-size: 16px;
                     line-height: 22px;
                     border: 1px solid #E0E0E0;
-                    list-style: none;
                     color: #b0b0b0;
                     &:nth-of-type(2) {
                         border-right:none;
                     }
-                    
                     >a {
                         display: block;
                         width: 16px;
@@ -312,7 +359,6 @@ html,body {
                         line-height: 16px;
                         text-align: center;
                         transition: color .5s;
-                        text-decoration: none;
                         color: #b0b0b0;
                         >.iconfont {
                             font-size: 16px;
@@ -340,7 +386,6 @@ html,body {
         >li {
             width: 234px;
             height: 300px;
-            list-style: none;
             border-top: 1px solid black;
             padding-top: 39px;
             background: white;
@@ -395,7 +440,6 @@ html,body {
             >a {
                 width: 233.98px;
                 height:300px;
-                text-decoration: none;
                 >#ziti {
                     margin: 0 20px 3px;
                     font-size: 14px;
@@ -477,11 +521,9 @@ html,body {
             >ul {
                 width: 156px;
                 height: 42px;
-                // line-height: 42px;
                 >li {
                     margin-left: 30px;
                     float: right;
-                    list-style: none;
                     line-height: 42px;
                     
                 }
@@ -501,7 +543,6 @@ html,body {
                 width: 72px;
                 height: 24px;
                 line-height: 58px;
-                text-decoration: none;
                 color: #E0E0E0;
                 font-size: 16px;
                 color: rgb(66,66,66);
@@ -529,7 +570,6 @@ html,body {
        position: relative;
        
         >#partsix-bottom-left{
-            // margin-right: 14px;
            >a{
             >img{
                 width: 234px;
@@ -539,7 +579,6 @@ html,body {
                 transform: translate3d(0,-2px,0);
             }
             }
-            
            }
         }
         >#partsix-bottom-right{
@@ -564,11 +603,8 @@ html,body {
                     box-shadow: 0 15px 30px rgba(0,0,0,.1);
                     transform: translate3d(0,-2px,0);
                 }
-                // background: red;
                 >a {
-                    
                     text-align: center;
-                    text-decoration: none;
                     >img {
                         width: 160px;
                         height: 160px;
@@ -594,8 +630,6 @@ html,body {
                 }
                 }
             }
-            
-             
         }
     }
 }
@@ -629,11 +663,9 @@ html,body {
         >ul {
             width: 156px;
             height: 42px;
-            // line-height: 42px;
             >li {
                 margin-left: 30px;
                 float: right;
-                list-style: none;
                 line-height: 42px;
             }
         }
@@ -648,11 +680,6 @@ html,body {
     position: relative;
     // background: red;
     //左右手机显示
-   
-   
-       
-       
-       
         >#partseven-bottom{
             position: absolute;
             top: 0;
@@ -660,8 +687,6 @@ html,body {
             width: 1226px;
             height: 628px;
             // background: red;
-          
-            
             >ul{
                 width: 1226px;
                 height: 628px;
@@ -673,7 +698,6 @@ html,body {
                 height: 250px;
                 padding:20px 0;
                 float: left ;
-                list-style: none;
                 margin: 0 14px 14px 0;
                 text-align: center;
                 background: #fff;
@@ -692,26 +716,21 @@ html,body {
                
                 // background: red;
                 >a {
-                    
                     text-align: center;
-                    text-decoration: none;
                     >img {
                         width: 160px;
                         height: 160px;
                         margin: 0 37px 18px;
-                       
                     }
                     >h2 {
                         color: #333333;
                         font-size: 14px;
                         margin: 0 10px 2px;
-                        // font-weight: 400;
                     }
                     >p:nth-of-type(1){
                         color: #B0b0B0;
                         font-size: 12px;
                         margin: 0 10px 10px;
-                        // font-weight: 400;
                     }
                     >p:last-of-type {
                         font-size: 14px;
@@ -723,23 +742,15 @@ html,body {
             }
         }
     }
-
-
-
-
     //底部内容
-    .whiteInsert{
-        margin: 0;
-        width: 100%;
-        height: 10px;
-        background: #F5F5F5;
-    }
-    
-    footer{
+
+    >#dibu{
         width: 100%;
         background: #fff;
         overflow: hidden;
-        >.service{
+
+        //五个服务项
+        >#fuwu{
             width: 1226px;
             height: 26px;
             padding: 27px 0;
@@ -753,7 +764,9 @@ html,body {
                 line-height: 25px;
                 float: left;
                 text-align: center;
+                color: rgb(97,97,97);
                 border-right: 1px solid #b0b0b0;
+                cursor: pointer;
                &:hover{
                 color:#ff6709;
                 } 
@@ -762,10 +775,11 @@ html,body {
                 }
             }  
         }
+
+        //底部的帮助中心什么的
         >.foot{
             width: 1226px;
             margin: 0 auto;
-        
             >.other{
                 width: 974px;
                 height: 210px;
@@ -775,7 +789,7 @@ html,body {
                     width: 973px/6;
                     margin: 40px auto;
                     float: left;
-                    font-size: 14px;
+                    font-size: 14px;    
                     &:last-of-type{
                         border-right: 1px solid #b0b0b0;
                     }
@@ -834,6 +848,7 @@ html,body {
             }
         }
     }
+    // 最后面  人工客服后面
     .about{
         background: #fafafa;
         padding: 30px 0;
@@ -862,6 +877,7 @@ html,body {
                    >a{
                        color: #757575;
                        font-size: 12px;
+                       text-decoration: none;
                    }
                } 
                >span{
@@ -896,7 +912,7 @@ html,body {
                     height: 40px;
                 }
             }
-            >a:first-of-type{
+            >a:nth-of-type(1){
                 margin-left:67px;
             }
         }
@@ -907,6 +923,64 @@ html,body {
         }
     }
 }
+// 右边导航
+#rightguide{
+    width: 83px;
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    z-index: 100;
 
+    &>a{
+        width: 81px;
+        height: 86px;
+        background: #ffffff;
+        border: 1px solid #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #999999;
+        font-size: 14px;
 
+        &>span{
+            font-size: 24px;
+        }
+
+        &>p{
+            margin-top: 10px;
+        }
+    }
+
+    &>a:last-of-type{
+        margin-top: 20px;
+    }
+
+    &>a:hover{
+        color: #ff6700;
+    }
+}
+
+//这是那个下载app的下拉
+.xiala{         
+    transition: .5s; 
+    position: absolute;
+    z-index: 50;
+    left:41%;
+    top: 55px;
+    color:#000;
+    width: 124px;
+    height: 0;
+    overflow: hidden;
+    line-height: 14px;
+    font-size: 14px;
+    background: #fff;
+    box-shadow: 0 1px 5px #aaa;
+    >img{
+        display: block;
+        margin: 18px auto 12px;
+        width: 90px;
+        height: 90px;
+    }
+}
 
